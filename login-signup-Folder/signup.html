@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Signup Form</h1>
+    <form>
+        <div>
+            <label for="First name">*First Name:</label>
+            <input type="text" id="firstname" name="firstName" required>
+
+            <label for="Last name">*Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>     
+        </div>
+       
+        <br/>
+        <div>
+            <label for="Email">*Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        
+        <br/>
+        <div>
+            <label for="username">*username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        
+        <br/>
+        <div>
+            <label for="passward">*passward:</label>
+            <input type="text" id="passward" name="passward" required>
+        </div>
+
+        <br/>
+        <div>
+            <label for="dob">*Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+
+        <br/>
+        <div>
+            <span>*Gender:</span>
+            <input type="radio" id="male" name="Gender" value="male" checked/>
+            <label for="male">Male</label>
+
+            <input type="radio" id="male" name="Gender" value="female">
+            <label for="female">female</label>
+        </div>
+
+        <br/>
+        <div>
+            <span>*Skils:</span>
+            <input type="checkbox" id="html" name="Skills" value="html"/>
+            <label for="html">Html</label>
+
+            <input type="checkbox" id="css" name="Skills" value="css"/>
+            <label for="css">Css</label>
+
+            <input type="checkbox" id="js" name="Skills" value="js"/>
+            <label for="js">Js</label>
+        </div>
+
+         <br/>
+        <div>
+            <label for="country">country:</label>
+                <select name="country" id="country" >  <!-- use multiple for select multiple -->
+                  <option value="">--select--</option>
+                  <option value="India">India</option>
+                  <option value="Usa">Usa</option>
+                  <option value="Russia">Russia</option>
+                </select>    
+        </div>
+
+        <br/>
+
+        <!-- input type button -->
+         <input type="submit" value="submit"/>
+         <!-- same hai input and button  -->
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html>
