@@ -1,0 +1,35 @@
+/* we can add css by using 
+  1) ID
+  2) class          EXTERNAL CSS
+  3)element/tag*/
+
+#summary{  /* ID */
+  color: blue;
+}
+#description{   /* ID */
+    color: red;
+}
+
+.cv-container{   /* CLASS */
+    margin: 10px;
+    .header{
+        display: flex;  
+        background-color: crimson; 
+        padding: 20px; 
+        justify-content: space-between;
+    }
+}
+ /* .header{
+        display: flex;  
+        background-color: crimson; 
+        padding: 20px; 
+        justify-content: space-between;
+    } */
+
+p{         /* element/tag */
+    color: blue;
+}
+
+ul{        /* element/tag */
+    color: blue;
+}
