@@ -1,0 +1,29 @@
+a{
+    text-decoration: none;
+    color: blue;
+    padding: 20px;
+    margin: 15px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+}
+.nav-container{
+        background-color: pink;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: normal;
+    flex-direction: column;
+    justify-content: space-between;
+}
+footer{
+    color: white;
+    background-color: black;
+}
