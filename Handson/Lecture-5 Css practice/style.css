@@ -1,0 +1,79 @@
+/* kuch chise muje har barr chahiye  common hai  */
+/*Global Scope*/
+:root{
+    --primary-bg-btn-color:rgb(118, 118, 230);
+    --secondary-bg-btn-color:orange;
+                                        /* variables we used by many times so that helps we donot have define again and again  */
+    --primary-btn-text-color:crimson;
+    --secondary-btn-text-color:black;
+    --input-border-color:red;
+    --input-border-focus-color:green;
+
+}
+
+/* Local Scope */
+/* --secondary-btn-border-color:red; */
+
+    .btn{
+        /* Local Scope */
+    --secondary-btn-border-color:red;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+   }
+
+.btn-primary{
+    background-color: var(--primary-bg-btn-color);
+    color: var(--primary-btn-text-color);
+}
+.btn-secondary{
+    background-color: var(--secondary-bg-btn-color);
+    color: var(--secondary-btn-text-color);
+    border: 10px solid var(--secondary-btn-border-color);
+}
+
+/* Pseudo Classes */
+input:hover{
+    border: 1px solid var(--input-border-color);
+}
+
+input:focus{
+    outline: none;
+    border: 10px solid var(--input-border-focus-color);
+}
+
+/* Pseudo Elements */
+.required::before{
+  content: "*";
+  color: red;
+}
+
+.required::after{
+  content: ":";
+  color: red;
+}
+
+h1::first-letter{
+    font-size: 40px;
+    color: yellow;
+}
+
+input::placeholder{
+    color: brown;
+}
+
+h1:hover{
+    font-size: 100px;
+}
+
+/* this for tables in Lecture-1 tables.html CSS */
+/* nth Child Pseudo Elements */
+table tr:nth-child(even){
+    background-color: pink;
+}
+table tbody tr:nth-child(odd){
+    background-color: orange;
+}
+table thead tr:nth-child(odd){
+    background-color: lightseagreen;
+}

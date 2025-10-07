@@ -27,3 +27,21 @@ footer{
     color: white;
     background-color: black;
 }
+
+/* Pseudo Classes */
+a:hover{
+    background-color: brown;
+    color: yellow;
+}
+
+a:visited
+{
+    color: red;
+}
+a:active{
+    color: gray;
+}
+
+a:link{
+    color:blue;
+}

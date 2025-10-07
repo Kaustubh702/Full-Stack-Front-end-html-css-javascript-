@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="login-form.css">
+    <link rel="stylesheet" href="./style.css">
+
+    
+    
 </head>
 <body>
-    <div>
+    <div class="login-container">
     <h1>Login form</h1>
     <form>
         <div>
-            <label for="username">*username:</label>
-            <input type="text" id="username" name="username" required>
+            <label class="required" for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
         </div>
         
         <br/>
         <div>
-            <label for="passward">*passward:</label>
-            <input type="text" id="passward" name="passward" required>
+            <label class="required" for="passward">*passward</label>
+            <input type="text" id="passward" name="passward" placeholder="your passward" required>
         </div>
 
         <br/>
-        <button type="submit">submit</button>
-        <button type="reset">reset</button>
+        <button type="submit" class="btn btn-primary">submit</button>
+        <button type="reset" class="btn btn-secondary">reset</button>
+        <button type="back" class="btn btn-secondary">back</button> <!-- no need to write css manually because coomon css will be applied-->
+
     </form>
     </div>
 </body>
