@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+</head>
+<style>
+    button{
+        width: 200px;
+        height: 50px;
+        background-color: blue;
+        color: white;
+        border-radius: 20%;
+        margin: 10px;
+
+    /* Transition: property name | duration | easing function | delay */
+     /* transition-property: background-color; */
+     transition-property: all;
+     transition-duration: 1s;
+     transition-timing-function: ease-in;
+     transition-delay: 1s;
+     transition-behavior: smooth;
+    }
+    .btn:hover{
+        cursor: pointer;
+        background-color:cadetblue;
+        color:darkgreen;
+        width: 300px;
+        height: 50px;
+    }
+    
+</style>
+<body>
+    <button type="submit" class="btn">submit</button>
+</body>
+</html>
