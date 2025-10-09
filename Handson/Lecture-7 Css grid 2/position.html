@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+</head>
+<style>
+    .container{
+        border: 1px solid;
+        height: 1000px;
+        margin: 10px;
+        padding: 20px;
+        position: relative; /* he comment karun paha mag samjel*/
+        /* he important ahe absolute sathi */
+        /* jevha apan container la relative karu tevha absolute wala block yala parent samjel */
+        /* nhi dela tar to saral entire screen la parent samjel , try karun paha */
+    }
+    .dimension{
+        border: 1px solid;
+        margin: 10px;
+        padding: 20px;
+        height: 100px;
+        width: 100px;
+    }
+    #box4{
+        /* ye apna container nhi chodega  */
+        /* stick rehata hai  , run karke dekhle */
+        position:sticky;
+        top: 600px;
+    }
+    #box1{
+        /* Screen pe apni jagah fixed karli kuch bhi karlo nhi hilega  */
+        position: fixed;
+        
+    }
+    #box2{
+        position: relative; /* block ki space rehati hai gayab nahi hoti */
+        top: 50px;
+        /* left: 400px; */
+        right: 20px;
+        background-color: lightgreen;
+        z-index: -1; /* sabse niche chala jayega, baki sab ka bydefault  zero hota hai z- index */
+    }
+    #box3{
+        /* apni jagah chod dega koi space nhi rahega  */
+        /* apne anscestor parent ka refrence lega us hisab se move karega */
+        position: absolute;
+        /* left: 400px; */
+        right: 500px;
+        bottom: 700px;
+        background-color: blueviolet;
+        z-index: 4; /* jiska z-index bada hoga vo uske uper aa jayega  */
+    }
+</style>
+<body>
+    <!-- Already har ek box ko by default position static laga hota hai -->
+    <div class="container">
+        <div class="dimension" id="box1">Box1</div>
+        <div class="dimension" id="box2">Box2</div>
+        <div class="dimension" id="box3">Box3</div>
+        <div class="dimension" id="box4">Box4</div>
+        
+    </div>
+</body>
+</html>

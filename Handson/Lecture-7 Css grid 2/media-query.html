@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web page</title>
+</head>
+<style>
+     .container{
+        border: 1px solid;
+        margin: 10px;
+        padding: 20px;
+    }
+    .flex{
+        display: flex;
+    }
+    .width{
+        width: 300px;
+        height: 300px;
+    }
+
+      /* Box Shadow  */
+    .box1{
+        box-shadow: 10px 10px 10px 10px red;
+    }
+    .box2{
+        box-shadow: 10px 10px green;
+    }
+    .box3{
+        box-shadow: 10px 10px 10px blue;
+    }
+    /* media query *//* responsive page fit in any device*/
+    @media (max-width:600px){
+        .flex{
+            flex-direction: column;
+            align-items: center;
+            color: red;
+        }
+    }
+    @media(min-width:300px){
+        .width{
+            width: 100px;
+            height: 200px;
+        }
+    }
+    @media ((min-width:100px) and (max-width:200px) ){
+        .width{
+            width: 50px;
+            height: 50px;
+        }
+    }
+</style>
+<body>
+ <div class="container flex">
+    <div class=" container width box1">Box1</div>
+    <div class="container width box2">box2</div>
+    <div class="container width box3">Box3</div>
+</div>
+</body>
+</html>
